@@ -245,7 +245,7 @@ function getDataWithPromise() {
     });
 }
 
-// * get data with promise method
+* get data with promise method
 getDataWithPromise()
     .then((data) => {
         console.log('Data with promise:', data);
@@ -254,7 +254,7 @@ getDataWithPromise()
         console.error('Error:', err.message);
     });
 
-// * get data with async/await method
+* get data with async/await method
 async function getDataWithAsyncAwait() {
     try {
         const data = await getDataWithPromise();
