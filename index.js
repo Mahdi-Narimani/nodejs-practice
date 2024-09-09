@@ -202,13 +202,13 @@ const writableStream = fs.createWriteStream('./text-files/copy_bigfile.txt');
 
 readableStream.on('data', (chunk) => {
     writableStream.write(chunk.toString());
-    writableStream.end('this is the end of the stream');
     writableStream.on('finish', () => {
         console.log('All data has been written');
     });
 });
 readableStream.on('end', () => {
     console.log('no more data to read');
+    writableStream.end('this is the end of the stream');
 });
 
 readableStream.on('error', (err) => {
