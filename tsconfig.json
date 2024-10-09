@@ -1,0 +1,9 @@
+{
+  "include": [
+    "./session-2.ts"
+  ],
+  "compilerOptions": {
+    "noEmit": true,
+    "module": "NodeNext"
+  }
+}

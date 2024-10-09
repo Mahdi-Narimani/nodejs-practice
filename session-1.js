@@ -7,8 +7,8 @@ const https = require('node:https');
 
 // * 1. Creating Simple API with http and routing with url modules
 
-/* 
-* Successful completion of exercise 1
+ 
+// * Successful completion of exercise 1
 
 const data = fs.readFileSync('./data/data.json', 'utf8');
 
@@ -34,7 +34,6 @@ server.listen(3000, '127.0.0.1', () => {
     console.log('Server Running on http://127.0.0.1:3000');
 });
 
-*/
 
 // ! 1. The End practice 1
 
@@ -42,8 +41,8 @@ server.listen(3000, '127.0.0.1', () => {
 
 // * 2. Creating Module and using from Promises
 
-/* 
-* Successful completion of exercise 2
+
+// * Successful completion of exercise 2
 
 const { add, subtract, multiply, divide } = require('./modules/mathOperations');
 
@@ -62,7 +61,6 @@ multiply(3, 6)
 divide(2, 7)
     .then((val) => console.log(val))
     .catch((err) => console.error(err));
-*/
 
 // ! 2. The End practice 2
 
@@ -70,10 +68,10 @@ divide(2, 7)
 
 // * 3. Working with Callback and file management
 
-/*
-* Successful completion of exercise 3
 
-* Version 1
+// * Successful completion of exercise 3
+
+// * Version 1
 fs.readFile('./text-files/input.txt', 'utf8', (err, data) => {
     console.error(err);
     const reverseText = data.split('').reverse().join('');
@@ -82,9 +80,9 @@ fs.readFile('./text-files/input.txt', 'utf8', (err, data) => {
     });
 });
 
-* ****************************************************************
+// * ****************************************************************
 
-* Version 2
+// * Version 2
 function readFilePromise(path) {
     return new Promise((resolve, reject) => {
         fs.readFile(path, 'utf8', (err, data) => {
@@ -123,7 +121,6 @@ async function mngFile() {
 }
 
 mngFile();
-*/
 
 // ! 3. The End practice 3
 
@@ -131,8 +128,8 @@ mngFile();
 
 // * 4. Working with Promises and Async/Await
 
-/*
-* Successful completion of exercise 2
+
+// * Successful completion of exercise 2
 
 async function createFiles() {
     try {
@@ -185,7 +182,6 @@ async function init() {
 
 init();
 
-*/
 
 // ! 4. The End practice 4
 
@@ -193,9 +189,9 @@ init();
 
 // * 5. Using Streams to read and write files
 
-/*
 
-* Successful completion of exercise 2
+
+// * Successful completion of exercise 2
 
 const readableStream = fs.createReadStream('./text-files/bigfile.txt');
 const writableStream = fs.createWriteStream('./text-files/copy_bigfile.txt');
@@ -214,16 +210,15 @@ readableStream.on('end', () => {
 readableStream.on('error', (err) => {
     console.error(`An error occurred: ${err}`);
 });
-*/
 
 // ! 5. The End practice 5
 
 // ****************************************************************
 
 // * 6. Handle asynchronous requests with callbacks and promises Task
-/*
 
-* Successful completion of exercise 2
+
+// * Successful completion of exercise 2
 
 function getDataWithPromise() {
     return new Promise((resolve, reject) => {
@@ -245,7 +240,7 @@ function getDataWithPromise() {
     });
 }
 
-* get data with promise method
+// * get data with promise method
 getDataWithPromise()
     .then((data) => {
         console.log('Data with promise:', data);
@@ -254,7 +249,7 @@ getDataWithPromise()
         console.error('Error:', err.message);
     });
 
-* get data with async/await method
+// * get data with async/await method
 async function getDataWithAsyncAwait() {
     try {
         const data = await getDataWithPromise();
@@ -266,6 +261,5 @@ async function getDataWithAsyncAwait() {
 
 getDataWithAsyncAwait();
 
-*/
 
 // ! 6. The End practice 6
