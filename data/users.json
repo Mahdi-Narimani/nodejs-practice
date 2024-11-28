@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "name": "John Doe",
+        "email": "john@example.com",
+        "age": 30,
+        "isActive": true
+    },
+    {
+        "id": 2,
+        "name": "Jane Smith",
+        "email": "jane@example.com",
+        "age": 25,
+        "isActive": false
+    },
+    {
+        "id": 3,
+        "name": "Alex Johnson",
+        "email": "alex@example.com",
+        "age": 35,
+        "isActive": true
+    },
+    {
+        "id": 4,
+        "name": "Emily Davis",
+        "email": "emily@example.com",
+        "age": 28,
+        "isActive": true
+    },
+    {
+        "id": 5,
+        "name": "Michael Brown",
+        "email": "michael@example.com",
+        "age": 40,
+        "isActive": false
+    }
+]
